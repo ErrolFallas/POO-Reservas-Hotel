@@ -6,4 +6,5 @@ class hotel {
     }
 }
 
+
 export default hotel

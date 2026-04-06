@@ -5,7 +5,15 @@ class cliente {
         this.contacto=contacto
     }
 
-    registrarclientes(){}
+    registrarclientes(){
+        console.log("Cliente registrado");
+    }
+
+    mostrarInformacionCliente(){
+        console.log("Nombre: " + this.nombre);
+        console.log("Identificacion: " + this.identificacion);
+        console.log("Contacto: " + this.contacto);
+    }
 }
 
 export default cliente
