@@ -8,3 +8,4 @@ const habitacion1 = new habitacion(101, "Suite", 100);
 const reserva1 = new reserva(cliente1, habitacion1, "2026-04-10", "activa");
 reserva1.cancelarReserva("cancelar")
 reserva1.mostrarInformacionReserva()
+
