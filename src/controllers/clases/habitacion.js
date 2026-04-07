@@ -1,9 +1,9 @@
 class Habitacion {
-    constructor(numero, tipo, precio) {
+    constructor(numero, tipo, precio, estado="disponible") {
         this.numero = numero;
         this.tipo = tipo;
         this.precio = precio;
-        this.estado = "disponible";
+        this.estado = estado;
     }
 
     ocupar() {

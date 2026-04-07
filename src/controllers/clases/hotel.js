@@ -1,16 +1,16 @@
 import Reserva from "./reserva.js";
 
 class Hotel {
-    constructor(nombre, direccion) {
+    constructor(nombre, direccion, habitaciones = []) {
         this.nombre = nombre;
         this.direccion = direccion;
-        this.listaHabitaciones = [];
+        this.habitaciones = habitaciones;
         this.listaClientes = [];
         this.listaReservas = [];
     }
 
     registrarHabitacion(habitacion) {
-        this.listaHabitaciones.push(habitacion);
+        this.habitaciones.push(habitacion);
         console.log("Habitacion registrada");
     }
 

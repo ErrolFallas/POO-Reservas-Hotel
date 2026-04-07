@@ -1,11 +1,11 @@
 import Habitacion from "./habitacion.js";
 import Cliente from "./cliente.js";
 class Reserva {
-    constructor(cliente, habitacion, fecha) {
+    constructor(cliente, habitacion, fecha, estado="confirmada") {
         this.cliente = cliente;
         this.habitacion = habitacion;
         this.fecha = fecha;
-        this.estado = "confirmada";
+        this.estado = estado;
     }
 
     cancelar() {
