@@ -1,19 +1,19 @@
-class cliente {
+class Cliente {
     constructor(nombre, identificacion, contacto) {
-        this.nombre=nombre
-        this.identificacion=identificacion
-        this.contacto=contacto
+        this.nombre = nombre;
+        this.identificacion = identificacion;
+        this.contacto = contacto;
     }
 
-    registrarclientes(){
+    registrarCliente() {
         console.log("Cliente registrado");
     }
 
-    mostrarInformacionCliente(){
+    mostrarInformacion() {
         console.log("Nombre: " + this.nombre);
         console.log("Identificacion: " + this.identificacion);
         console.log("Contacto: " + this.contacto);
     }
 }
 
-export default cliente
+export default Cliente;

@@ -1,18 +1,20 @@
-import hotel from "../clases/hotel.js";
-class habitacion extends hotel{
-    constructor(nombre, numero, tipo, precio, estado) {
-        super(nombre)
-        this.numero = numero
-        this.tipo = tipo
-        this.precio = precio
-        this.estado = estado
+class Habitacion {
+    constructor(numero, tipo, precio) {
+        this.numero = numero;
+        this.tipo = tipo;
+        this.precio = precio;
+        this.estado = "disponible";
     }
 
-    registrarHabitaciones() { 
-        console.log("Habitacion registrada");
+    ocupar() {
+        this.estado = "ocupada";
     }
 
-    mostrarInformacionHabitacion(){
+    liberar() {
+        this.estado = "disponible";
+    }
+
+    mostrarInformacion() {
         console.log("Numero: " + this.numero);
         console.log("Tipo: " + this.tipo);
         console.log("Precio: " + this.precio);
@@ -20,4 +22,4 @@ class habitacion extends hotel{
     }
 }
 
-export default habitacion
+export default Habitacion;
